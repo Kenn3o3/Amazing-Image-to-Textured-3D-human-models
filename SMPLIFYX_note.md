@@ -99,7 +99,7 @@ Run OpenPose to extract keypoints and save them as JSON files or images. Use the
 ```
 
 #### Extract Face and Hand Keypoints Separately
-For improved accuracy, process face and hand keypoints separately and combine the JSON outputs:
+If you don't have enough GPU power, process face and hand keypoints separately and combine the JSON outputs:
 ```bash
 ./build/examples/openpose/openpose.bin --image_dir data/images/ --face --write_json output_jsons_face/ --net_resolution "320x176"
 ./build/examples/openpose/openpose.bin --image_dir data/images/ --face --write_images output_images_face/ --net_resolution "320x176"
