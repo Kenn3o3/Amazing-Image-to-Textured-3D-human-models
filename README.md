@@ -4,9 +4,9 @@
 
 | Model | Input | Output | Notes | Colab |
 |-------|-------|--------|-------|-------|
-| [SiTH](https://github.com/SiTH-Diffusion/SiTH) | RGB image | Textured human model | Uses OpenPose; may create distorted models with self-occlusions; GPU out-of-memory (OOM) issues. | |
+| [SiTH](https://github.com/SiTH-Diffusion/SiTH) | RGB image | Textured human model | Uses OpenPose; may create distorted models with self-occlusions; segment body; GPU out-of-memory (OOM) issues. | |
 | [PIFu](https://shunsukesaito.github.io/PIFu/) | RGB image | Textured human model | Trained model not found. | |
-| [PSHuman](https://github.com/pengHTYX/PSHuman/) | RGB image | Textured human model | Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; requires 24 GB GPU ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); online demo unavailable. | |
+| [PSHuman](https://github.com/pengHTYX/PSHuman/) | RGB image | Textured human model | Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; requires 24 GB GPU ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); online demo unavailable. (The current model is trained at a resolution of 768, requiring over 40GB of VRAM. We are considering training a new model at a resolution of 512, which would allow it to run on an RTX 4090.) | |
 | [HumanRef](https://github.com/eckertzhang/HumanRef) | RGB image | Textured human model | Diffusion-based; high GPU requirements; needs BLIP2 model; online demo unavailable. | |
 | [SIFU](https://github.com/River-Zhang/SIFU) | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. | N/A (Colab Python, CUDA version incompatible) |
 | [IDOL](https://github.com/yiyuzhuang/IDOL) | RGB image | A-Pose textured human model | Generates A-Pose model; requires ≥24 GB GPU memory, potentially reducible ([pull #17](https://github.com/yiyuzhuang/IDOL/pull/17)). | |
