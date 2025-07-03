@@ -18,9 +18,8 @@
 - [x] **SiTH**: Replicate ([GPU OOM issue](https://github.com/SiTH-Diffusion/SiTH))
 - [x] **PIFu**: Replicate ([Pretrained model link expired, issue opened](https://shunsukesaito.github.io/PIFu/))
 - [x] **SIFU**: Set up environment + write documentation
-- [ ] **ICON**: Run + write documentation ([ICON Website](https://icon.is.tue.mpg.de/index.html))
 - [ ] **RSC-Net**: Run + write documentation ([GitHub](https://github.com/xuxy09/RSC-Net))
-- [ ] Write documentation for all tested models
+- [ ] Write environment setup documentation for all tested models
 
 ## Papers Without Code
 
@@ -44,3 +43,4 @@
 - [LHM: Large Animatable Human Reconstruction Model from a Single Image in Seconds](http://arxiv.org/pdf/2503.10625v1)
 - [SIGMAN: Scaling 3D Human Gaussian Generation with Millions of Assets](http://arxiv.org/pdf/2504.06982v1)
 - [HumanDreamer-X: Photorealistic Single-image Human Avatars Reconstruction via Gaussian Restoration](http://arxiv.org/pdf/2504.03536v1)
+- [ICON](https://icon.is.tue.mpg.de/index.html)
