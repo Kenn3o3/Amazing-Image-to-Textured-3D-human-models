@@ -13,7 +13,7 @@
 | [SMPLitex](https://dancasas.github.io/projects/SMPLitex/index.html) | RGB image | A-Pose textured human model | Diffusion-based 3D human texture inference; generates A-Pose model. | |
 
 ## Todo List
-
+- add HSMR and SMPLIFX
 ### Model Experiments
 - [x] **SiTH**: Replicate ([GPU OOM issue](https://github.com/SiTH-Diffusion/SiTH))
 - [x] **PIFu**: Replicate ([Pretrained model link expired, issue opened](https://shunsukesaito.github.io/PIFu/))

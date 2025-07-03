@@ -11,12 +11,6 @@ pip install omegaconf
 pip install loguru
 ```
 
-### Install CUDA and NVIDIA Toolkit
-```bash
-sudo apt install nvidia-cuda-toolkit
-export CUDA_HOME=/usr/lib/cuda
-```
-
 ### Install CUDA Samples
 ```bash
 git clone https://github.com/NVIDIA/cuda-samples
