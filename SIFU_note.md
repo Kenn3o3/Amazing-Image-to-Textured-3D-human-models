@@ -1,4 +1,4 @@
-# SIFU Code Reproduction Guide
+# SIFU Code Replication Guide
 
 This guide provides step-by-step instructions to set up the environment for running the SIFU project. Follow these steps carefully to ensure a successful setup.
 
