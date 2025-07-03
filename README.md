@@ -4,16 +4,20 @@
 
 | ToTest | Model | Input | Output | Notes | Colab |
 |-------|-------|-------|--------|-------|-------|
-| [x] | [SIFU](https://github.com/River-Zhang/SIFU) | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. My note for code replication 复现: [./SIFU_note.md](./SIFU_note.md) | N/A (Colab Python, CUDA version incompatible) |
-| [x] | [SiTH](https://github.com/SiTH-Diffusion/SiTH) | RGB image | Textured human model | Uses OpenPose; may create distorted models with self-occlusions; segment body; GPU out-of-memory (OOM) issues. Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; Requires 24 GB GPU. Just follow instructions. | N/A |
-| [x] | [PSHuman](https://github.com/pengHTYX/PSHuman/) | RGB image | Textured human model | ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); huggingface demo unavailable. (The current model is trained at a resolution of 768, requiring over 40GB of VRAM. We are considering training a new model at a resolution of 512, which would allow it to run on an RTX 4090.). Just follow instructions. | N/A |
-| [x] | [HumanRef](https://github.com/eckertzhang/HumanRef) | RGB image | Textured human model | Diffusion-based; high GPU requirements; needs BLIP2 model; online demo unavailable. | N/A |
-| [x] | [Humansplat](https://github.com/humansplat/humansplat) | RGB image | Textured human model |  HPS (Human Pose and Shape) Estimation to output .obj file| N/A |
+| [x] | [SIFU](https://github.com/River-Zhang/SIFU) ! | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. My note for code replication 复现: [./SIFU_note.md](./SIFU_note.md) | N/A (Colab Python, CUDA version incompatible) |
+| [x] | [SiTH](https://github.com/SiTH-Diffusion/SiTH) !* | RGB image | Textured human model | Uses OpenPose; may create distorted models with self-occlusions; segment body; GPU out-of-memory (OOM) issues. Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; Requires 24 GB GPU. Just follow instructions. | N/A |
+| [x] | [PSHuman](https://github.com/pengHTYX/PSHuman/) ! | RGB image | Textured human model | ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); huggingface demo unavailable. (The current model is trained at a resolution of 768, requiring over 40GB of VRAM. We are considering training a new model at a resolution of 512, which would allow it to run on an RTX 4090.). Just follow instructions. | N/A |
+| [x] | [HumanRef](https://github.com/eckertzhang/HumanRef) ! | RGB image | Textured human model | Diffusion-based; high GPU requirements; needs BLIP2 model; online demo unavailable. | N/A |
 | [x] | [HumanGif](https://github.com/skhu101/HumanGif) | RGB image | Textured human model | It was tested on H100 GPU | N/A |
 | [] | [LHM](https://github.com/aigc3d/LHM) | RGB image | Video / Textured human GS model | Honestly, the geometric properties of the 3D Gaussian are quite poor. The 3D Gaussian is designed for rendering, not for hard mesh. Even when using Poisson reconstruction, the resulting geometry is still not aesthetically pleasing. So, we do not provide a convert function to extract a obj file from the generated gaussian model. You can run the entire pipeline on 14 GB GPUs. Demo available on [HuggingFace](https://huggingface.co/spaces/3DAIGC/LHM) | N/A |
+| [x] | [Humansplat](https://github.com/humansplat/humansplat) | RGB image | Textured human model |  HPS (Human Pose and Shape) Estimation to output .obj file| N/A |
 | [] | [Tech](https://github.com/huangyangyi/TeCH) | RGB image | Textured human model | Requires 2*32G GPU memory, need addtiional configuration | N/A |
-| [-] | [PIFu](https://shunsukesaito.github.io/PIFu/) | RGB image | Textured human model | Trained model not found. | N/A |
+| [-] | [PIFu](https://shunsukesaito.github.io/PIFu/) ! | RGB image | Textured human model | Trained model not found. | N/A |
 | |  |  |  |  | |
+
+- !: Highly relevant
+- *: May not work well for any poses
+- A related Blender add-on: https://github.com/kwan3854/CEB_ECON
 
 ## Other related Papers
 - [RSC-Net: 3D Human Pose, Shape and Texture from Low-Resolution Images and Videos](https://arxiv.org/pdf/2103.06498), [[code]](https://github.com/xuxy09/RSC-Net)
