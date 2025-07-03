@@ -8,7 +8,7 @@
 | [PIFu](https://shunsukesaito.github.io/PIFu/) | RGB image | Textured human model | Trained model not found. | |
 | [PSHuman](https://github.com/pengHTYX/PSHuman/) | RGB image | Textured human model | Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; requires 24 GB GPU ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); online demo unavailable. (The current model is trained at a resolution of 768, requiring over 40GB of VRAM. We are considering training a new model at a resolution of 512, which would allow it to run on an RTX 4090.) | |
 | [HumanRef](https://github.com/eckertzhang/HumanRef) | RGB image | Textured human model | Diffusion-based; high GPU requirements; needs BLIP2 model; online demo unavailable. | |
-| [SIFU](https://github.com/River-Zhang/SIFU) | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. | N/A (Colab Python, CUDA version incompatible) |
+| [SIFU](https://github.com/River-Zhang/SIFU) | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. My note for code replication 复现: [./SIFU_note.md](./SIFU_note.md) | N/A (Colab Python, CUDA version incompatible) |
 | [IDOL](https://github.com/yiyuzhuang/IDOL) | RGB image | A-Pose textured human model | Generates A-Pose model; requires ≥24 GB GPU memory, potentially reducible ([pull #17](https://github.com/yiyuzhuang/IDOL/pull/17)). | |
 | [SMPLitex](https://dancasas.github.io/projects/SMPLitex/index.html) | RGB image | A-Pose textured human model | Diffusion-based 3D human texture inference; generates A-Pose model. | |
 
