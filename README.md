@@ -4,7 +4,7 @@
 
 | ToTest | Model | Input | Output | Notes | Colab |
 |-------|-------|-------|--------|-------|-------|
-| [x] | [SIFU](https://github.com/River-Zhang/SIFU) ! | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. Code Replication 复现 Note: [./SIFU_note.md](./SIFU_note.md) | N/A (Colab Python, CUDA version incompatible) |
+| [x] | [SIFU](https://github.com/River-Zhang/SIFU) ! | RGB image | Textured human model | Supports diffusion-based texturing and editing; requires ≥16 GB GPU memory; online demo unavailable. Code Replication 复现 Note: [./SIFU_note.md](./SIFU_note.md) | [./sifu.ipynb](./sifu.ipynb) |
 | [x] | [SiTH](https://github.com/SiTH-Diffusion/SiTH) !* | RGB image | Textured human model | Uses OpenPose; may create distorted models with self-occlusions; segment body; GPU out-of-memory (OOM) issues. Uses diffusion model to hallucinate viewpoints, addresses self-occlusion; Requires 24 GB GPU. Code Replication 复现 Note: [./SiTH_note.md](./SiTH_note.md) | N/A |
 | [x] | [PSHuman](https://github.com/pengHTYX/PSHuman/) ! | RGB image | Textured human model | ([issue #4](https://github.com/pengHTYX/PSHuman/issues/4)); huggingface demo unavailable. (The current model is trained at a resolution of 768, requiring over 40GB of VRAM. We are considering training a new model at a resolution of 512, which would allow it to run on an RTX 4090.). Code Replication 复现 Note: [./PSHuman_note.md](./PSHuman_note.md). | N/A |
 | [-] | [PIFu](https://shunsukesaito.github.io/PIFu/) ! | RGB image | Textured human model | Trained model not found. May need to retrain the model. Code Replication 复现 Note: [./PIFu_note.md](./PIFu_note.md). | N/A |
